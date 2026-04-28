@@ -1,4 +1,5 @@
 import fotoDani from "../assets/fotoDaniel.jpeg"
+import fotoale from "../assets/fotoale.jpeg"
 
 export function Founders() {
   const team = [
@@ -13,7 +14,7 @@ export function Founders() {
       name: "Alexis Rodriguez",
       role: "Co-Founder & UI/UX Designer",
       info: "Experto en diseño de interfaces y experiencia de usuario. Su objetivo es que cada web sea visualmente impactante.",
-      image: "https://placeholder.com", // Aquí la de tu socio
+      image: fotoale, // Aquí la de tu socio
       linkedin: "#",
     },
   ];
