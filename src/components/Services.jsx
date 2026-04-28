@@ -40,9 +40,11 @@ export function Services() {
             Servicios
           </p>
 
+
           <h2 className="text-4xl font-black md:text-5xl">
             Soluciones digitales para hacer crecer tu negocio.
           </h2>
+          <div className="mt-4 h-1 w-20 bg-cyan-400 rounded-full"></div>
 
           <p className="mt-5 text-lg leading-8 text-slate-300">
             Creamos experiencias web limpias, rápidas y enfocadas en generar

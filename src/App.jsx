@@ -9,6 +9,8 @@ import { Precios } from "./pages/Precios";
 import { Contacto } from "./pages/Contacto";
 import { WhatsAppButton } from "./components/WhatsAppButton";
 
+import { Founders } from "./components/Founders";
+
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +23,7 @@ function App() {
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/precios" element={<Precios />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/fundadores" element={<Founders />} />
         </Routes>
 
         <Footer />

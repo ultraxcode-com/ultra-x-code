@@ -124,7 +124,7 @@ export function Portfolio() {
           <h2 className="text-4xl font-black md:text-5xl">
             Proyectos que transmiten confianza desde el primer clic.
           </h2>
-
+          <div className="mt-4 h-1 w-20 bg-cyan-400 rounded-full"></div>
           <p className="mt-5 text-lg leading-8 text-slate-300">
             Diseños modernos, rápidos y enfocados en que cada negocio se vea más
             profesional y consiga más contactos.
