@@ -1,3 +1,33 @@
+import { ProjectCard } from "./ProjectCard";
+import vhsflix1 from "../assets/vhsflix/vhsflix1.png"
+import vhsflix2 from "../assets/vhsflix/vhsflix2.png"
+import vhsflix3 from "../assets/vhsflix/vhsflix3.png"
+import vhsflix4 from "../assets/vhsflix/vhsflix4.png"
+import odontologia1 from "../assets/odontologia/odontologia1.png"
+import odontologia2 from "../assets/odontologia/odontologia2.png"
+import odontologia3 from "../assets/odontologia/odontologia3.png"
+import odontologia4 from "../assets/odontologia/odontologia4.png"
+import odontologia5 from "../assets/odontologia/odontologia5.png"
+import odontologia6 from "../assets/odontologia/odontologia6.png"
+import panaderia1 from "../assets/panaderia/panaderia1.png"
+import panaderia2 from "../assets/panaderia/panaderia2.png"
+import panaderia3 from "../assets/panaderia/panaderia3.png"
+import panaderia4 from "../assets/panaderia/panaderia4.png"
+import panaderia5 from "../assets/panaderia/panaderia5.png"
+import priteca1 from "../assets/priteca/priteca1.png"
+import priteca3 from "../assets/priteca/priteca3.png"
+import priteca4 from "../assets/priteca/priteca4.png"
+import priteca5 from "../assets/priteca/priteca5.png"
+import priteca6 from "../assets/priteca/priteca6.png"
+import rva1 from "../assets/Rva-porcelanatos/rva1.png"
+import rva2 from "../assets/Rva-porcelanatos/rva2.png"
+import rva3 from "../assets/Rva-porcelanatos/rva3.png"
+import rva4 from "../assets/Rva-porcelanatos/rva4.png"
+import rva5 from "../assets/Rva-porcelanatos/rva5.png"
+import rva6 from "../assets/Rva-porcelanatos/rva6.png"
+
+
+
 const projects = [
   {
     title: "VHSFlix",
@@ -5,29 +35,78 @@ const projects = [
     description:
       "Aplicación estilo streaming con catálogo de películas, categorías, búsqueda y favoritos.",
     tech: ["React", "Tailwind", "TMDB API"],
-    image:
-      "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop",
-    link: "#",
+    images: [
+      vhsflix1,
+      vhsflix2,
+      vhsflix3,
+      vhsflix4
+    ],
+    link: "https://vhsflix.vercel.app/",
   },
+
   {
     title: "Dental Clinic System",
     type: "Sistema de citas",
     description:
       "Plataforma para clínica dental con gestión de pacientes, agenda, roles y panel médico.",
     tech: ["React", "Supabase", "Tailwind"],
-    image:
-      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=1200&auto=format&fit=crop",
-    link: "#",
+    images: [
+      odontologia1,
+      odontologia2,
+      odontologia3,
+      odontologia4,
+      odontologia5,
+      odontologia6,
+    ],
+    link: "https://consultorio-odontologico-lac.vercel.app/",
+  },
+
+  {
+    title: "Priteca",
+    type: "Reformas y construcción",
+    description:
+      "Página profesional para empresa de reformas y construcción, enfocada en transmitir confianza, servicios claros y contacto directo.",
+    tech: ["React", "Tailwind", "Vite"],
+    images: [
+    priteca1,
+    priteca3,
+    priteca4,
+    priteca5,
+    priteca6,
+    ],
+    link: "https://priteca-web.vercel.app/",
+  },
+
+  {
+    title: "Panadería Web",
+    type: "Página de negocio",
+    description:
+      "Landing moderna para panadería con presentación de productos, diseño cálido y enfoque comercial.",
+    tech: ["React", "Tailwind", "UI/UX"],
+    images: [
+  panaderia1,
+    panaderia2,
+      panaderia3,
+        panaderia4,
+          panaderia5,
+    ],
+    link: "https://panaderia-peach.vercel.app/",
   },
   {
-    title: "Portfolio Personal",
-    type: "Marca profesional",
+    title: "Grupo RVA",
+    type: "Pisos y acabados",
     description:
-      "Portfolio moderno para presentar servicios, proyectos y contacto profesional.",
-    tech: ["React", "Vite", "CSS"],
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
-    link: "https://porfolio-alexis-chi.vercel.app/",
+      "Sitio web corporativo para negocio de porcelanatos, pisos y acabados, con una presentación visual orientada a productos y confianza comercial.",
+    tech: ["React", "Tailwind", "Vite"],
+    images: [
+    rva1,
+    rva2,
+    rva3,
+    rva4,
+    rva5,
+    rva6,
+    ],
+    link: "https://grupo-rva.vercel.app/",
   },
 ];
 
@@ -54,54 +133,7 @@ export function Portfolio() {
 
         <div className="grid gap-8 lg:grid-cols-3">
           {projects.map((project) => (
-            <article
-              key={project.title}
-              className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-2xl backdrop-blur-xl transition duration-500 hover:-translate-y-3 hover:border-cyan-400/50 hover:shadow-[0_0_50px_#22d3ee33]"
-            >
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-                />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
-
-                <span className="absolute left-5 top-5 rounded-full border border-cyan-400/30 bg-slate-950/70 px-4 py-2 text-xs font-bold uppercase tracking-widest text-cyan-300 backdrop-blur-xl">
-                  {project.type}
-                </span>
-              </div>
-
-              <div className="p-7">
-                <h3 className="text-2xl font-black text-white">
-                  {project.title}
-                </h3>
-
-                <p className="mt-4 leading-7 text-slate-400">
-                  {project.description}
-                </p>
-
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {project.tech.map((item) => (
-                    <span
-                      key={item}
-                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-7 inline-flex font-bold text-cyan-300 transition hover:text-white"
-                >
-                  Ver proyecto →
-                </a>
-              </div>
-            </article>
+            <ProjectCard key={project.title} project={project} />
           ))}
         </div>
       </div>

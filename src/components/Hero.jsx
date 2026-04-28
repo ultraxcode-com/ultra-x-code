@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import heroImg from "../assets/fondohero.jpeg";
 
 export function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24">
+      
       {/* Imagen de fondo animada */}
       <motion.div
         className="absolute inset-0"
@@ -18,7 +20,7 @@ export function Hero() {
       >
         <img
           src={heroImg}
-          alt="Fondo futurista de desarrollo web"
+          alt="Fondo desarrollo web"
           className="h-full w-full object-cover"
         />
       </motion.div>
@@ -36,9 +38,10 @@ export function Hero() {
       {/* Grid futurista */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:70px_70px]" />
 
-      {/* Degradado para que el texto destaque */}
+      {/* Degradado */}
       <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/20" />
 
+      {/* CONTENIDO */}
       <div className="relative mx-auto w-full max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -63,20 +66,22 @@ export function Hero() {
             que tus clientes confíen en tu marca y te contacten más rápido.
           </p>
 
+          {/* BOTONES */}
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="/contacto"
+            
+            <Link
+              to="/contacto"
               className="rounded-full bg-cyan-400 px-8 py-4 text-center font-bold text-slate-950 shadow-[0_0_40px_#22d3ee66] transition hover:scale-105 hover:bg-white"
             >
               Quiero conseguir más clientes
-            </a>
+            </Link>
 
-            <a
-              href="/portfolio"
+            <Link
+              to="/portfolio"
               className="rounded-full border border-white/20 px-8 py-4 text-center font-bold text-white backdrop-blur transition hover:border-cyan-400 hover:text-cyan-300"
             >
               Ver proyectos
-            </a>
+            </Link>
           </div>
 
           <p className="mt-4 text-sm text-slate-400">
