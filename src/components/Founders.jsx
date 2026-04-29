@@ -7,14 +7,14 @@ export function Founders() {
       name: "Daniel Díaz",
       role: "Co-Founder & Lead Developer",
       info: "Especialista en React y arquitectura de software. Se encarga de que cada línea de código sea eficiente y escalable.",
-      image: fotoDani, // Aquí pon la ruta de tu foto
+      image: fotoDani,
       linkedin: "#",
     },
     {
       name: "Alexis Rodriguez",
       role: "Co-Founder & UI/UX Designer",
       info: "Experto en diseño de interfaces y experiencia de usuario. Su objetivo es que cada web sea visualmente impactante.",
-      image: fotoale, // Aquí la de tu socio
+      image: fotoale, 
       linkedin: "#",
     },
   ];
@@ -23,15 +23,13 @@ export function Founders() {
     <section className="py-20 px-6 bg-black">
       <div className="mx-auto max-w-7xl">
         {/* Cabecera del componente alineada a la izquierda */}
-        <div className="mb-16 text-left"> {/* Aseguramos alineación a la izquierda */}
+        <div className="mb-16 text-left"> 
             <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-white uppercase">
             Los <span className="text-cyan-400">Fundadores</span>
             </h2>
             
-            {/* La línea ahora sale desde el inicio (izquierda) */}
             <div className="mt-4 h-1 w-20 bg-cyan-400 rounded-full"></div>
             
-            {/* Quitamos mx-auto para que el párrafo no se centre */}
             <p className="mt-6 text-slate-400 text-lg max-w-2xl">
             Mentes creativas unidas para transformar ideas en productos digitales de alto rendimiento.
             </p>

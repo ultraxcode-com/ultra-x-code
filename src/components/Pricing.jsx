@@ -67,12 +67,9 @@ export function Pricing() {
               : "border-white/10 bg-white/[0.04] hover:-translate-y-2"
           }`}
         >
-          <h3 className="text-xl font-bold">{plan.name}</h3>
+          <h3 className="text-4xl font-bold">{plan.name}</h3>
 
-          <p className="mt-4 text-3xl font-black text-cyan-300">
-            {plan.price}
-          </p>
-
+          <div className="mt-4 h-1 w-40 bg-cyan-400 rounded-full mx-auto"></div>
           <p className="mt-4 text-slate-400">{plan.description}</p>
 
           <ul className="mt-6 space-y-2 text-slate-300 text-left inline-block">
