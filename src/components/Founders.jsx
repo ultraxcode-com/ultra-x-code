@@ -8,14 +8,14 @@ export function Founders() {
       role: "Co-Founder & Lead Developer",
       info: "Especialista en React y arquitectura de software. Se encarga de que cada línea de código sea eficiente y escalable.",
       image: fotoDani,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/danieldaviddf/",
     },
     {
       name: "Alexis Rodriguez",
       role: "Co-Founder & UI/UX Designer",
       info: "Experto en diseño de interfaces y experiencia de usuario. Su objetivo es que cada web sea visualmente impactante.",
       image: fotoale, 
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/alexisrrh/",
     },
   ];
 
