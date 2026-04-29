@@ -97,7 +97,7 @@ El proyecto está desplegado en **Vercel**. Cualquier push a la rama `main` desp
 ¿Tienes un proyecto en mente? Hablemos.
 
 - 🌐 [ultraxcode.com](https://ultraxcode.com)
-- 📧 hola@ultraxcode.com
+- 📧 inf.ultraxcode@gmail.com
 
 ---
 
