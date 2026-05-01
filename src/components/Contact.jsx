@@ -7,7 +7,7 @@ export function Contact() {
   )}`;
 
   const emailUrl =
-    "mailto:inf.ultraxcode@gmail.com?subject=Solicitud%20de%20p%C3%A1gina%20web&body=Hola,%20quiero%20informaci%C3%B3n%20para%20crear%20una%20p%C3%A1gina%20web.";
+    "mailto:info@ultraxcode.com?subject=Solicitud%20de%20p%C3%A1gina%20web&body=Hola,%20quiero%20informaci%C3%B3n%20para%20crear%20una%20p%C3%A1gina%20web.";
 
   return (
     <section id="contact" className="px-6 py-24">

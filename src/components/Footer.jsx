@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function Footer() {
   const message = "Hola, vi tu web de UltraXCode y quiero información para crear una página web.";
   const whatsappUrl = `https://wa.me/34643804335?text=${encodeURIComponent(message)}`;
-  const emailUrl = "mailto:inf.ultraxcode@gmail.com";
+  const emailUrl = "mailto:info@ultraxcode.com";
 
   return (
     <footer className="relative border-t border-white/10 bg-black/20 px-6 py-8 backdrop-blur-sm">
@@ -80,7 +80,7 @@ export function Footer() {
               </div>
               <div className="min-w-0">
                 <p className="text-[10px] uppercase font-bold text-slate-500">Email</p>
-                <p className="text-sm md:text-base font-semibold text-slate-200 truncate">inf.ultraxcode@gmail.com</p>
+                <p className="text-sm md:text-base font-semibold text-slate-200 truncate">info@ultraxcode.com</p>
               </div>
             </a>
 

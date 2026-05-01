@@ -43,7 +43,7 @@ Sitio web oficial de **Ultra X Code**, agencia especializada en desarrollo web m
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/tuusuario/ultraxcode.git
+git clone https://github.com/ultraxcode-com/ultra-x-code
 cd ultraxcode
 ```
 
@@ -97,7 +97,7 @@ El proyecto está desplegado en **Vercel**. Cualquier push a la rama `main` desp
 ¿Tienes un proyecto en mente? Hablemos.
 
 - 🌐 [ultraxcode.com](https://ultraxcode.com)
-- 📧 inf.ultraxcode@gmail.com
+- 📧 info@ultraxcode.com
 
 ---
 
