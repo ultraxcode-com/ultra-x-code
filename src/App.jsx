@@ -10,6 +10,7 @@ import { Contacto } from "./pages/Contacto";
 import { WhatsAppButton } from "./components/WhatsAppButton";
 
 import { Founders } from "./components/Founders";
+import CookieBanner from "./components/CookieBanner";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/fundadores" element={<Founders />} />
         </Routes>
+        <CookieBanner />
 
         <Footer />
         <WhatsAppButton/>
