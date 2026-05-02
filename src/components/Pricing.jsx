@@ -2,6 +2,7 @@ const plans = [
   {
     name: "Landing",
     price: "Desde 300€",
+    href: "",
     description:
       "Perfecto para empezar a tener presencia online y captar clientes.",
     features: [
@@ -14,6 +15,7 @@ const plans = [
   {
     name: "Web Profesional",
     price: "Desde 600€",
+    href: "",
     description:
       "Ideal para negocios que quieren verse serios y generar más clientes.",
     features: [
@@ -27,6 +29,7 @@ const plans = [
   {
     name: "Web Premium",
     price: "Desde 800€",
+    href: "",
     description:
       "Para negocios que necesitan funcionalidades más avanzadas.",
     features: [
@@ -71,6 +74,7 @@ export function Pricing() {
 
           <div className="mt-4 h-1 w-40 bg-cyan-400 rounded-full mx-auto"></div>
           <p className="mt-4 text-slate-400">{plan.description}</p>
+          
 
           <ul className="mt-6 space-y-2 text-slate-300 text-left inline-block">
             {plan.features.map((f) => (
@@ -79,11 +83,19 @@ export function Pricing() {
           </ul>
 
           <a
+            href={plan.href}
+            className="mt-8 block rounded-full bg-cyan-400 px-6 py-3 font-bold text-slate-950 transition hover:scale-105 hover:bg-white"
+          >
+            Mira un Ejemplo
+          </a>
+
+          <a
             href="/contacto"
             className="mt-8 block rounded-full bg-cyan-400 px-6 py-3 font-bold text-slate-950 transition hover:scale-105 hover:bg-white"
           >
             Solicitar información
           </a>
+          
         </div>
       ))}
     </div>
