@@ -43,7 +43,7 @@ export function Contact() {
         </div>
 
         <p className="mt-5 text-sm text-slate-400">
-          Respuesta rápida ⚡ | Sin compromiso
+          <strong>Respuesta rápida y eficiente.</strong>
         </p>
       </div>
     </section>

@@ -40,7 +40,7 @@ const CookieBanner = () => {
         <div className="text-sm text-slate-300">
           <p>
             Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el tráfico. 
-            Al hacer clic en "Aceptar", permites el uso de **Google Analytics**.
+            Al hacer clic en "Aceptar", permites el uso de <strong>Google Analytics</strong>.
           </p>
         </div>
         
