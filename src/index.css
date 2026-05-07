@@ -9,3 +9,16 @@ html {
     bottom: 100px; /* Sube el botón para que libre el banner */
   }
 }
+
+@media (max-width: 767px) {
+  /* 1. Buscamos el botón de WhatsApp por sus clases o etiquetas más comunes */
+  [class*="whatsapp"], 
+  [id*="whatsapp"],
+  .whatsapp-btn,
+  .btn-whatsapp,
+  a[href*="wa.me"],
+  a[href*="whatsapp.com"] {
+    bottom: 140px !important; /* Lo sube lo suficiente para librar el cookie banner */
+    transition: bottom 0.3s ease-in-out;
+  }
+}
