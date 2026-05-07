@@ -8,3 +8,9 @@ body {
   background: #020617;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .boton-whatsapp {
+    bottom: 100px; /* Sube el botón para que libre el banner */
+  }
+}
