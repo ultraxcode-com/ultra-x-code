@@ -197,7 +197,6 @@ export function Hero() {
           <p className="mt-4 text-sm text-slate-400">
             <strong>Respuesta rápida y eficiente.</strong>
           </p>
-
           <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-400">
             <span>✓ Diseño moderno</span>
             <span>✓ Web responsive</span>
