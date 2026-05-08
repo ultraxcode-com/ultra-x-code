@@ -2,7 +2,7 @@ export function Contact() {
   const message =
     "Hola, vi tu web de UltraXCode y quiero información para crear una página web.";
 
-  const whatsappUrl = `https://wa.me/34643804335?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/34668550112?text=${encodeURIComponent(
     message
   )}`;
 

@@ -1,0 +1,3 @@
+[class*="whatsapp"], [id*="whatsapp"], .floating-wpp {
+    bottom: 90px !important;
+}

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
   const message = "Hola, vi tu web de UltraXCode y quiero información para crear una página web.";
-  const whatsappUrl = `https://wa.me/34643804335?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/34668550112?text=${encodeURIComponent(message)}`;
   const emailUrl = "mailto:info@ultraxcode.com";
 
   return (
@@ -67,7 +67,7 @@ export function Footer() {
               </div>
               <div className="min-w-0">
                 <p className="text-[10px] uppercase font-bold text-slate-500">WhatsApp</p>
-                <p className="text-sm md:text-base font-semibold text-slate-200">+34 643 80 43 35</p>
+                <p className="text-sm md:text-base font-semibold text-slate-200">+34 668 55 01 12</p>
               </div>
             </a>
 

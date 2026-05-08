@@ -22,3 +22,7 @@ html {
     transition: bottom 0.3s ease-in-out;
   }
 }
+
+[class*="whatsapp"], [id*="whatsapp"], .floating-wpp {
+    bottom: 90px !important;
+}
