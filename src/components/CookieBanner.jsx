@@ -23,12 +23,18 @@ const CookieBanner = () => {
     
     // 3. Ocultamos el banner
     setMostrarBanner(false);
+
+    // 4. Avisamos al botón de WhatsApp para que baje inmediatamente
+    window.dispatchEvent(new Event("cambioCookies"));
   };
 
   const handleRechazar = () => {
     // Guardamos "false" para recordar que el usuario no quiere rastreo
     localStorage.setItem("cookiesAceptadas", "false");
     setMostrarBanner(false);
+
+    // Avisamos al botón de WhatsApp para que baje inmediatamente
+    window.dispatchEvent(new Event("cambioCookies"));
   };
 
   // Si el usuario ya decidió, no renderizamos nada
