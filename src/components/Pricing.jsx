@@ -2,7 +2,7 @@ const plans = [
   {
     name: "Landing",
     price: "Desde 300€",
-    href: "",
+    href: "https://panaderia-peach.vercel.app/",
     description:
       "Perfecto para empezar a tener presencia online y captar clientes.",
     features: [
@@ -15,7 +15,7 @@ const plans = [
   {
     name: "Web Profesional",
     price: "Desde 600€",
-    href: "",
+    href: "https://priteca-web.vercel.app/",
     description:
       "Ideal para negocios que quieren verse serios y generar más clientes.",
     features: [
@@ -29,7 +29,7 @@ const plans = [
   {
     name: "Web Premium",
     price: "Desde 800€",
-    href: "",
+    href: "https://consultorio-odontologico-lac.vercel.app/",
     description:
       "Para negocios que necesitan funcionalidades más avanzadas.",
     features: [
