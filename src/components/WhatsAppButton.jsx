@@ -37,22 +37,20 @@ export function WhatsAppButton() {
   const message = "Hola, vi tu web de UltraXCode y quiero información para crear una página web.";
   const url = `wa.me{encodeURIComponent(message)}`;
 
-  return createPortal(
+    return createPortal(
     <a
       href={url}
       target="_blank"
       rel="noreferrer"
-      className={`z-50 rounded-full bg-green-500 font-bold text-white shadow-2xl flex items-center justify-center gap-2 whitespace-nowrap transition-all duration-300 hover:scale-105 hover:bg-green-400 select-none active:scale-95 ${
+      // Volvemos a las clases puras fijas de Tailwind que ahora responderán gracias al ajuste del index.html
+      className={`fixed bottom-4 right-4 z-[9999] rounded-full bg-green-500 font-bold text-white shadow-2xl flex items-center justify-center gap-2 whitespace-nowrap transition-all duration-300 hover:scale-105 hover:bg-green-400 select-none active:scale-95 ${
         animar ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"
       }`}
       style={{
-        position: "fixed",
-        bottom: "16px", // Al remover el contenedor del banner del DOM, 16px clavan el botón abajo del todo
-        right: "16px",
-        height: "46px",
-        paddingLeft: "20px",
-        paddingRight: "20px",
-        fontSize: "14px",
+        height: "42px",
+        paddingLeft: "16px",
+        paddingRight: "16px",
+        fontSize: "13px",
         animation: "pulseWpp 2s cubic-bezier(0.4, 0, 0.6, 1) infinite"
       }}
     >
@@ -64,7 +62,7 @@ export function WhatsAppButton() {
       `}</style>
 
       <svg
-        style={{ width: "20px", height: "20px", fill: "currentColor", flexShrink: 0 }}
+        style={{ width: "18px", height: "18px", fill: "currentColor", flexShrink: 0 }}
         viewBox="0 0 24 24"
         xmlns="w3.org"
       >
@@ -74,4 +72,5 @@ export function WhatsAppButton() {
     </a>,
     document.body
   );
+
 }

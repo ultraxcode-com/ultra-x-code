@@ -58,19 +58,25 @@ function App() {
       {/* Tracker de rutas */}
       <AnalyticsTracker />
       
-      <main className="min-h-screen bg-slate-950 text-white">
-        <Navbar />
+      {/* MODIFICADO: Cambiado min-h-screen por min-h-[100dvh] y añadidas clases flex para controlar el alto en móvil */}
+      <main className="min-h-[100dvh] bg-slate-950 text-white flex flex-col justify-between">
+        <div>
+          <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/servicios" element={<Servicios />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/precios" element={<Precios />} />
-          <Route path="/contacto" element={<Contacto />} />
-          <Route path="/fundadores" element={<Founders />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/servicios" element={<Servicios />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/precios" element={<Precios />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/fundadores" element={<Founders />} />
+          </Routes>
+        </div>
+        
         <Footer />
       </main>
+
+      {/* Componentes independientes renderizados vía Portals */}
       <CookieBanner />
       <WhatsAppButton />
     </BrowserRouter>

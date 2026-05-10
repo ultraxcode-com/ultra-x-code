@@ -29,8 +29,9 @@ html {
 
 html, body {
   min-height: 100vh;
-  min-height: -webkit-fill-available; /* Corrige la altura en navegadores móviles */
-  overflow-x: hidden;
+  min-height: 100dvh; /* Altura dinámica en móviles modernos */
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  position: relative;
 }
