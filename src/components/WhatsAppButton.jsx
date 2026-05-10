@@ -35,7 +35,7 @@ export function WhatsAppButton() {
   if (!cookiesAceptadas) return null;
 
   const message = "Hola, vi tu web de UltraXCode y quiero información para crear una página web.";
-  const url = `wa.me{encodeURIComponent(message)}`;
+  const url = `https://wa.me/34668550112?text=${encodeURIComponent(message)}`;
 
   return createPortal(
     /* Contenedor invisible que se clava de forma estricta abajo a la derecha de la pantalla real */
