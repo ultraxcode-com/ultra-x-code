@@ -42,28 +42,26 @@ export function WhatsAppButton() {
       href={url}
       target="_blank"
       rel="noreferrer"
-      // Eliminamos clases de posicionamiento y dejamos solo el estilo visual
       className={`z-50 rounded-full bg-green-500 font-bold text-white shadow-2xl flex items-center justify-center gap-2 whitespace-nowrap transition-all duration-300 hover:scale-105 hover:bg-green-400 select-none active:scale-95 ${
         animar ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"
       }`}
       style={{
-        // Posicionamiento absoluto e inmune a páginas cortas
         position: "fixed",
-        top: "calc(100vh - 65px - env(safe-area-inset-bottom, 0px))",
+        // Clavamos la referencia al borde inferior real usando la unidad estable svh
+        bottom: "calc(16px + env(safe-area-inset-bottom, 0px))",
         right: "16px",
         height: "46px",
         paddingLeft: "20px",
         paddingRight: "20px",
         fontSize: "14px",
-        // Animación de latido sutil nativa sobre el propio botón
+        // Inyectamos la animación de latido directamente sobre el botón para evitar duplicados
         animation: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite"
       }}
     >
-      {/* Añadimos los keyframes del latido directamente en una etiqueta style */}
       <style>{`
         @keyframes pulse {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: .95; transform: scale(1.03); }
+          0%, 100% { transform: scale(1); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3); }
+          50% { transform: scale(1.04); box-shadow: 0 0 15px 5px rgba(34, 197, 94, 0.5); }
         }
       `}</style>
 
