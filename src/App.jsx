@@ -69,11 +69,10 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/fundadores" element={<Founders />} />
         </Routes>
-
-        <CookieBanner />
         <Footer />
-        <WhatsAppButton />
       </main>
+      <CookieBanner />
+      <WhatsAppButton />
     </BrowserRouter>
   );
 }

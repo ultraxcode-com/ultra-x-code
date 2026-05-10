@@ -26,3 +26,11 @@ html {
 [class*="whatsapp"], [id*="whatsapp"], .floating-wpp {
     bottom: 90px !important;
 }
+
+html, body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available; /* Corrige la altura en navegadores móviles */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
