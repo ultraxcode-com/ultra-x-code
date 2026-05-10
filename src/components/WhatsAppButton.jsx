@@ -47,25 +47,22 @@ export function WhatsAppButton() {
       }`}
       style={{
         position: "fixed",
-        // Clavamos la referencia al borde inferior real usando la unidad estable svh
-        bottom: "calc(16px + env(safe-area-inset-bottom, 0px))",
+        bottom: "16px", // Al remover el contenedor del banner del DOM, 16px clavan el botón abajo del todo
         right: "16px",
         height: "46px",
         paddingLeft: "20px",
         paddingRight: "20px",
         fontSize: "14px",
-        // Inyectamos la animación de latido directamente sobre el botón para evitar duplicados
-        animation: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite"
+        animation: "pulseWpp 2s cubic-bezier(0.4, 0, 0.6, 1) infinite"
       }}
     >
       <style>{`
-        @keyframes pulse {
+        @keyframes pulseWpp {
           0%, 100% { transform: scale(1); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3); }
           50% { transform: scale(1.04); box-shadow: 0 0 15px 5px rgba(34, 197, 94, 0.5); }
         }
       `}</style>
 
-      {/* Icono SVG Oficial de WhatsApp */}
       <svg
         style={{ width: "20px", height: "20px", fill: "currentColor", flexShrink: 0 }}
         viewBox="0 0 24 24"
